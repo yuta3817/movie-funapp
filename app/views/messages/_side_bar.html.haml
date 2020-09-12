@@ -1,0 +1,18 @@
+.Side_Menu
+  .SideHeader
+    .SideHeader__list
+      %h3.SideHeader__userName
+        = current_user.name
+      %ul.SideHeader__iconlist
+        %li.SideHeader__leftIcon
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.SideHeader__rightIcon
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog')
+  .TitleList
+    .TitleList__group
+      .TitleList__group-name
+        糸
+      .TitleList__group-message
+        まだコメントはありません

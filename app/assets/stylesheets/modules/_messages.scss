@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+display: flex;
+}
+
+.Side_Menu {
+color: blue;
+width: 220px;
+}
+  .SideHeader {
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+      width: 180px;
+    }
+      &__userName {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__iconlist {
+        display: flex;
+        justify-content: end;
+      }
+        &__leftIcon {
+          color: blue;
+        }
+        &__rightIcon {
+          color: blue;
+          margin-left: 5px;
+        }
+  }
+  .TitleList {
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    &__group {
+      padding: 20px 0 40px;
+    }
+      &__group-name {
+        font-size: 15px;
+      }
+      &__group-message {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+  }
+.Main {
+width: calc(100vw - 220px);
+background-color: #d7eeff;
+}
+  .MainHeader {
+    background-color: #eee;
+    height: 150px;
+    display: flex;
+    border-bottom: solid 1px #eeeeee;
+    
+    &__title-image {
+      width: 160px;
+      height: 106px;
+      margin: 20px 40px;
+    }
+    &__title {   
+    }
+    &__invitation-button {
+      display: block;
+      border: 1px solid #38aef0;
+      color: #38aef0;
+      height: 40px;
+      line-height: 40px;
+      margin: 20px 40px 28px 800px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+    &__title-name {
+      font-size: 25px;
+      color: black;
+      margin-top: 25px;
+    }
+    &__member-list {
+      display: flex;
+      font-size: 12px;
+      color: gray;
+      margin-top: 40px;
+    }
+  }
+  .MessageField {
+    background-color: #ffffdd;
+    height: calc(100vh - 240px);
+  }
+  .Footer {
+    background-color: #eee;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 25px 50px 20px 40px;
+  }
+    .Form {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      &__content {
+        width: 100%;
+        background-color: #FFF;
+        font-size: 16px;
+      }
+      &__submit {
+        background-color: #38AEF0;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
