@@ -1,0 +1,17 @@
+.Main
+  .MainHeader
+    .MainHeader__title-image
+      <img src="https://i.gyazo.com/652a4fe8f19d38df2c8a50f5f55e2d52.png" alt="Image from Gyazo"/></a>
+    .MainHeader__title
+      .MainHeader__title-name
+        糸
+      %ul.MainHeader__member-list
+        %li.MainHeader__member
+          Member :
+    = link_to "#", class: "MainHeader__invitation-button" do
+      Invite
+  .MessageField
+  .Footer
+    .Form
+      <input type="text" placeholder="コメント" class="Form__content">
+      <input type="submit" value="投稿"  class="Form__submit">
