@@ -5,14 +5,16 @@
         = current_user.name
       %ul.SideHeader__iconlist
         %li.SideHeader__leftIcon
-          = link_to '#' do
+          = link_to '/groups/new' do
             = icon('fas', 'edit')
         %li.SideHeader__rightIcon
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .TitleList
-    .TitleList__group
-      .TitleList__group-name
-        糸
-      .TitleList__group-message
-        まだコメントはありません
+    - current_user.groups.each do |group|
+      .TitleList__group
+        = link_to '#' do
+          .TitleList__group-name
+            = group.name
+          .TitleList__group-message
+            メッセージはまだありません
